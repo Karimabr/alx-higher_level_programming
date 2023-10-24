@@ -1,18 +1,14 @@
 #!/usr/bin/python3
-# 2-square.py
-"""Define a class Square."""
+""" Working on oop with python """
 
 
-class Square:
-    """Represent a square."""
+class Square():
+    """Class representing a square"""
 
-    def __init__(self, size=0):
-        """Initialize a new Square.
+    def __init__(self, size):
+        """ initialize the class
+
         Args:
-            size (int): The size of the new square.
+           size (int): size of the square
         """
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
         self.__size = size
